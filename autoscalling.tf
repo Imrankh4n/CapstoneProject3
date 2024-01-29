@@ -8,7 +8,7 @@ resource "aws_launch_template" "my_template"{
    }
 }
 
-resource "aws_autoscalling_group" "my_asg"{
+resource "aws_autoscaling_group" "my_asg"{
    name = "capstone_asg"
    max_size = 3
    min_size = 1
@@ -20,10 +20,10 @@ resource "aws_autoscalling_group" "my_asg"{
    }
 }
 
-resource "aws_autoscalling_policy" "my_as_policy"{
+resource "aws_autoscaling_policy" "my_as_policy"{
    name = "my_capstone_as_policy"
-   policy_type = "TargetTrackingScalling" 
-   autoscalling_group_name = "\${aws_autoscalling_mygroup.my_asg.name}"
+   policy_type = "TargetTrackingScaling" 
+   autoscaling_group_name = "\${aws_autoscaling_mygroup.my_asg.name}"
    estimated_instance_warmup = 200
    target_tracking_configuration {
 	predefined_metric_specification {
