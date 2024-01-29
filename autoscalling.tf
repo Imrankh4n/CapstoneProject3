@@ -1,6 +1,6 @@
 resource "aws_launch_template" "my_template"{
    name = "capstone-template"
-   image_id = 
+   image_id = "ami-0c7217cdde317cfec"
    instace_type = "t2.micro"
    network_interfaces{
 	associate_public_ip_address = "true"
