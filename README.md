@@ -1,4 +1,4 @@
-# CapstoneProject3
+# Capstone Project 3
 
 # Hotel-Side Hospital, 
 a globally renowned hospital chain headquartered in Australia, is aiming to
